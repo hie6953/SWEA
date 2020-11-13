@@ -1,0 +1,6 @@
+for tc in range(int(input())):
+    t = 0
+    P = list(map(int, input().split()))
+    for p in P:
+        t += p if p>=40 else 40
+    print('#{} {}' .format(tc+1, t//5))
