@@ -1,5 +1,5 @@
 prime=[2,3,5,7]
-lst=list(range(11,999999,2))
+lst=list(range(13,533,2))
 n=1
 for i in lst:
     check=1
