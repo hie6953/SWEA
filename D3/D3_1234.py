@@ -1,3 +1,4 @@
+# 1234. [S/W 문제해결 기본] 10일차 - 비밀번호
 for i in range(1,11):
     N,nums=input().split()
     P=''
