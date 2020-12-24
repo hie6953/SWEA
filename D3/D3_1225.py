@@ -1,0 +1,14 @@
+# 1225. [S/W 문제해결 기본] 7일차 - 암호생성기
+for _ in range(10):
+    t=input()
+    P=list(map(int,input().split()))
+    i=c=0
+    while P[(i-1)%8]!=0:
+        c+=1
+        P[i%8]=0 if P[i%8]<c else P[i%8]-c
+        if c==5:
+            c=0
+        i+=1
+    R=P[i%8:]+P[:i%8]
+    print('#{}' .format(t),end=' ')
+    print(*R)
