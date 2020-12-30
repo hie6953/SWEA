@@ -15,4 +15,4 @@ for tc in range(int(input())):
                 c+=1
                 break
     print('#{} {}' .format(tc+1,c))
-    
+     
