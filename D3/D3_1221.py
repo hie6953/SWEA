@@ -1,0 +1,15 @@
+# 1221. [S/W 문제해결 기본] 5일차 - GNS
+N=["ZRO", "ONE", "TWO", "THR", "FOR", "FIV", "SIX", "SVN", "EGT", "NIN"]
+for _ in range(int(input())):
+    t,M=input().split()
+    L=list(input().split())
+    C=[0]*10
+    for l in L:
+        for n in range(10):
+            if N[n]==l:
+                C[n]+=1
+                break
+    print(t)
+    for i in range(10):
+        print((N[i]+' ')*C[i], end='')
+    print()
